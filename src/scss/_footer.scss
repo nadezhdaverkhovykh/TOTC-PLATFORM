@@ -1,0 +1,104 @@
+.footer {
+  background-color: #252641;
+  padding-top: 74px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .footer__wrapper {
+    max-width: 1640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__textWrapper {
+    display: flex;
+    align-items: center;
+    gap: 77px;
+  }
+  &__text {
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 197px;
+    border-left: #626381 solid 1px;
+    padding: 9px 0px 8px 41px;
+  }
+  &__subscribe {
+    padding-top: 95px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    color: #b2b3cf;
+    font-size: 26px;
+    letter-spacing: 4px;
+    font-weight: 500;
+  }
+  &__inputField {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 599px;
+    padding-bottom: 96px;
+  }
+  &__input {
+    color: #83839a;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 80px;
+    background-color: #252641;
+    border: #83839a solid 1px;
+    min-width: 400px;
+    min-height: 60px;
+    padding-left: 30px;
+  }
+
+  &__submitButton {
+    background-color: #49bbbd;
+    border-radius: 60px;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 14px 34px 13px 34px;
+  }
+  &__terms {
+    display: flex;
+    text-align: center;
+  }
+  .terms__text {
+    font-family: "Poppins", sans-serif;
+    color: #b2b3cf;
+    font-size: 22px;
+    letter-spacing: 4px;
+    &--careers {
+      padding-right: 20px;
+    }
+    &--policy {
+      border-left: #626381 solid 1px;
+      border-right: #626381 solid 1px;
+      padding: 0px 20px;
+    }
+    &--condition {
+      padding-left: 20px;
+    }
+    &--copyright {
+      text-align: center;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .footer {
+    padding-right: 5px;
+    padding-left: 5px;
+    &__subscribe {
+      font-size: 20px;
+    }
+    &__inputField {
+      flex-direction: column;
+    }
+  }
+}

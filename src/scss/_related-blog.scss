@@ -1,0 +1,128 @@
+.related-blog {
+  background-color: rgba(157, 204, 255, 0.2);
+  padding: 93px 0px 0px 0px;
+  &__container {
+    max-width: 1640px;
+    margin: 0 auto;
+  }
+  &__text {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: #49bbbd;
+    font-size: 20px;
+  }
+  &__articles {
+    display: flex;
+    gap: 99px;
+  }
+  &__article {
+    max-width: 786px;
+    background-color: #ffffff;
+    padding: 60px 33px 60px 34px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  }
+  &__picture {
+    max-width: 100%;
+  }
+  &__title a {
+    font-size: 26px;
+    color: #252641;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+    text-decoration: none;
+  }
+  &__profile {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+  }
+  &__description {
+    color: #696984;
+    font-size: 20px;
+    max-width: 684px;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
+  .article__views {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+  .views__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #696984;
+  }
+  .article__link {
+    color: #696984;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: end;
+    gap: 11px;
+    padding: 73px;
+  }
+  .next-button,
+  .previous-button {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(73, 187, 189, 0.5);
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+  }
+  .next-button:active,
+  .previous-button:active {
+    background-color: #49bbbd;
+  }
+  .next-button::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-left: 5px solid white;
+    border-bottom: 5px solid white;
+    transform: translate(-50%, -60%) rotate(45deg);
+  }
+  .previous-button::after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%) rotate(-45deg);
+  }
+}
+@media (max-width: 1024px) {
+  .related-blog {
+    padding: 30px 30px 0px 30px;
+  }
+  .related-blog__articles {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .related-blog__buttons {
+    justify-content: center;
+  }
+}
