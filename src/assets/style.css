@@ -2,6 +2,9 @@
   max-width: 1640px;
   margin: 0 auto;
 }
+.header .header__mobile {
+  display: none;
+}
 .header .nav {
   display: flex;
   align-items: center;
@@ -24,6 +27,7 @@
 .header .user {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 18px;
   color: #5b5b5b;
   font-size: 22px;
@@ -73,21 +77,57 @@
   }
 }
 @media (max-width: 480px) {
-  .header .container {
-    padding-bottom: 5px;
+  .header .header__mobile {
+    display: block;
+  }
+  .header__mobileWrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__mobileWrapper .user {
+    gap: 5px;
+    align-items: center;
+  }
+  .header__mobileWrapper .user__picture {
+    padding-left: 0px;
+    width: 60px;
+    height: 40px;
+  }
+  .header .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+  }
+  .header .burger span {
+    width: 25px;
+    height: 3px;
+    background: #49bbbd;
+    display: block;
   }
   .header .nav {
-    flex-wrap: wrap;
+    display: none;
   }
-  .header .nav .header__wrapper {
-    flex-direction: column;
+  .burgerMenu {
+    display: none;
   }
-  .header .nav .header__menu {
+  .burgerMenu.active {
+    display: block;
+  }
+  .burgerMenu.active ul {
     padding-left: 0px;
-    gap: 18px;
   }
-  .header .user {
-    gap: 9px;
+  .burgerMenu.active li {
+    list-style: none;
+  }
+  .burgerMenu.active a {
+    text-decoration: none;
+    color: #5b5b5b;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
   }
 }
 .hero {

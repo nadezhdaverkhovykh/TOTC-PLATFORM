@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOTC PLATFORM</title>
+
     <link rel="stylesheet" href="./src/assets/style.css" />
+    <script defer src="./index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -48,6 +50,40 @@
             </div>
           </div>
         </nav>
+        <!-- //mobile version -->
+        <div class="header__mobile">
+          <div class="header__mobileWrapper">
+            <button class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="user">
+              <img
+                class="user__picture"
+                src="./src/assets/images/header/profile-picture.png"
+                alt="Фотография профиля"
+              />
+              <p class="user__name">Lina</p>
+              <button type="button" class="user__button">
+                <span>
+                  <img
+                    src="./src/assets/images/header/header-button.png"
+                    alt="Открыть дропдаун"
+                /></span>
+              </button>
+            </div>
+          </div>
+          <nav class="burgerMenu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
