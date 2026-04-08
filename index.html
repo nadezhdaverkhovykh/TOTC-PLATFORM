@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TOTC PLATFORM</title>
+
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" crossorigin href="/TOTC-PLATFORM/assets/index-D3Hi4wMK.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a class="logo" href="#">
+            <img src="data:image/png;base64,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" alt="Лого"
+          /></a>
+          <div class="header__wrapper">
+            <ul class="header__menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+            <div class="user">
+              <img
+                class="user__picture"
+                src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                alt="Фотография профиля"
+              />
+              <p class="user__name">Lina</p>
+              <button type="button" class="user__button">
+                <span>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAFhJREFUeAGNjMEJwCAQBBfSQJ75JSWklHSUEixJrMASLEVXUJDzPDwYEHbGA8BDPLlIwHzTHklu/Iqchv1Fk7ISSbm+7/6TjJwlryJTXkWmLKMtud9HTm0oVGAnl1vptfQAAAAASUVORK5CYII="
+                    alt="Открыть дропдаун"
+                /></span>
+              </button>
+            </div>
+          </div>
+        </nav>
+        <!-- //mobile version -->
+        <div class="header__mobile">
+          <div class="header__mobileWrapper">
+            <button class="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="user">
+              <img
+                class="user__picture"
+                src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                alt="Фотография профиля"
+              />
+              <p class="user__name">Lina</p>
+              <button type="button" class="user__button">
+                <span>
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAICAYAAADN5B7xAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAFhJREFUeAGNjMEJwCAQBBfSQJ75JSWklHSUEixJrMASLEVXUJDzPDwYEHbGA8BDPLlIwHzTHklu/Iqchv1Fk7ISSbm+7/6TjJwlryJTXkWmLKMtud9HTm0oVGAnl1vptfQAAAAASUVORK5CYII="
+                    alt="Открыть дропдаун"
+                /></span>
+              </button>
+            </div>
+          </div>
+          <nav class="burgerMenu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <div class="hero__wrapper">
+            <div class="hero__info">
+              <p class="hero__subtitle">
+                By Themadbrains in
+                <span class="hero__subtitle--blue">inspiration</span>
+              </p>
+              <h1 class="hero__title">
+                Why Swift UI Should Be on the<br />
+                Radar of Every Mobile<br />
+                Developer
+              </h1>
+              <p class="hero__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing
+                elit, sed do eiusmod tempor
+              </p>
+              <button class="hero__button" type="button">
+                Start learning now
+              </button>
+            </div>
+            <div>
+              <img
+                class="hero__image"
+                src="/TOTC-PLATFORM/assets/hero-picture-CYJQo176.png"
+                alt="Демонстрация встречи zoom"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-list">
+        <div class="blog-list__container">
+          <p class="blog-list__text">Reading blog list</p>
+          <div class="blog-list__cards">
+            <div class="blog-list__card blog-list__card--ux">
+              <span class="blog-list__span"><a href="#">UX/UI</a></span>
+            </div>
+            <div class="blog-list__card blog-list__card--react">
+              <span class="blog-list__span"><a href="#">React</a></span>
+            </div>
+            <div class="blog-list__card blog-list__card--php">
+              <span class="blog-list__span"><a href="#">PHP</a></span>
+            </div>
+            <div class="blog-list__card blog-list__card--js">
+              <span class="blog-list__span"><a href="#">JavaScript</a></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="related-blog">
+        <div class="related-blog__container">
+          <div class="related-blog__text">
+            <p>Related Blog</p>
+            <a class="related-blog__link" href="#">See all</a>
+          </div>
+          <div class="related-blog__articles">
+            <article class="related-blog__article">
+              <img
+                class="related-blog__picture"
+                src="/TOTC-PLATFORM/assets/related-blog__picture1-r4dvjTE7.png"
+                alt="Девушка"
+              />
+              <h2 class="related-blog__title">
+                <a href="#"
+                  >Class adds $30 million to its balance sheet for a <br />
+                  Zoom-friendly edtech solution
+                </a>
+              </h2>
+              <div class="related-blog__profile">
+                <img
+                  src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                  alt="Фотография профиля"
+                />
+                <p>Lina</p>
+              </div>
+              <p class="related-blog__description">
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+              </p>
+              <div class="article__views">
+                <a class="article__link" href="#">Read more</a>
+                <div class="views__amount">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAYAAAAPr1RWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAlZJREFUeAF1VM152kAQnVnBhxNsf3IFVjog5xxABgLkElIBdGBSAVBB7AqCK0C+GPErpYJQAlQQHUgcPqOdzCoI6wf2tLuz++bNe7OLcGKUhkP9bf6i5SOUELGABMY+5BHQkiQtBWrW6OPNj1MYeAz07PzylgMdXuqHg6hA0QMiI3qeCFaEsjOuVh+TWCK6aEwWxbP85U8G7oXAEuBuR/77p0r5alS5efe8EVeEos20VvukhgBh1cbTbyeZ18ezFgocxFhJatu1yoOaf5rPr8lHI5Sh6Tj6duc7DFEIz0uWa7vRTPeL6R2Y1+zp5xQwsw+Bg4sSmC25jen8V30671qm6eUymsnsvFcZsJA7978f1vXRyEAh7hIVeX834j66IYhCEF3JVpvMblUCJVvsHGBTxdQ8A1q2q3SLY+NSlaak8F9QFwJ0LrmDcRBl+D1q6IJPsdsCscd3rQy3WRsSg4hWoRRCo16QLnloT4i2uMYMJaO671OTNScrBY77FiRYw8lByyBHjq6PRTXtjSVop32NmhKUxe1eGjr6WVZYYculCWiB1riThVSMPXkqf1gLu2Hy5ZQ0/JBkYBi9CDOaQD0mSdSxK+aDagb5X/vIQNeulvvBLNyqz5wWkhzEGET7fDIJGP75nV0ps9VLzuUvHDYvwpyWz5E+j/nUWCyKIGkAr/+IMncgNOQyywf91Uvm/2UQ7TLVktuN6IfAKfCggpFjQFZ2+aNqJ0IeG+3xvjJbj8pA4PftatVNYqXA40mgyFI1EdBgpkH5SnN2c+UDuQjy8RhoOP4BsXIM4Yhu5A0AAAAASUVORK5CYII="
+                      alt="Количество просмотров"
+                  /></span>
+                  <p>251,232</p>
+                </div>
+              </div>
+            </article>
+            <article class="related-blog__article">
+              <img
+                class="related-blog__picture"
+                src="/TOTC-PLATFORM/assets/related-blog__picture2-w0VpbfNi.png"
+                alt="Открытый ноутбук"
+              />
+              <h2 class="related-blog__title">
+                <a href="#">
+                  Class adds $30 million to its balance sheet for a <br />
+                  Zoom-friendly edtech solution</a
+                >
+              </h2>
+              <div class="related-blog__profile">
+                <img
+                  src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                  alt="Фотография профиля"
+                />
+                <p>Lina</p>
+              </div>
+              <p class="related-blog__description">
+                Class, launched less than a year ago by Blackboard co-founder
+                Michael Chasen, integrates exclusively...
+              </p>
+              <div class="article__views">
+                <a class="article__link" href="#">Read more</a>
+                <div class="views__amount">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAPCAYAAAAPr1RWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAlZJREFUeAF1VM152kAQnVnBhxNsf3IFVjog5xxABgLkElIBdGBSAVBB7AqCK0C+GPErpYJQAlQQHUgcPqOdzCoI6wf2tLuz++bNe7OLcGKUhkP9bf6i5SOUELGABMY+5BHQkiQtBWrW6OPNj1MYeAz07PzylgMdXuqHg6hA0QMiI3qeCFaEsjOuVh+TWCK6aEwWxbP85U8G7oXAEuBuR/77p0r5alS5efe8EVeEos20VvukhgBh1cbTbyeZ18ezFgocxFhJatu1yoOaf5rPr8lHI5Sh6Tj6duc7DFEIz0uWa7vRTPeL6R2Y1+zp5xQwsw+Bg4sSmC25jen8V30671qm6eUymsnsvFcZsJA7978f1vXRyEAh7hIVeX834j66IYhCEF3JVpvMblUCJVvsHGBTxdQ8A1q2q3SLY+NSlaak8F9QFwJ0LrmDcRBl+D1q6IJPsdsCscd3rQy3WRsSg4hWoRRCo16QLnloT4i2uMYMJaO671OTNScrBY77FiRYw8lByyBHjq6PRTXtjSVop32NmhKUxe1eGjr6WVZYYculCWiB1riThVSMPXkqf1gLu2Hy5ZQ0/JBkYBi9CDOaQD0mSdSxK+aDagb5X/vIQNeulvvBLNyqz5wWkhzEGET7fDIJGP75nV0ps9VLzuUvHDYvwpyWz5E+j/nUWCyKIGkAr/+IMncgNOQyywf91Uvm/2UQ7TLVktuN6IfAKfCggpFjQFZ2+aNqJ0IeG+3xvjJbj8pA4PftatVNYqXA40mgyFI1EdBgpkH5SnN2c+UDuQjy8RhoOP4BsXIM4Yhu5A0AAAAASUVORK5CYII="
+                      alt="Количество просмотров"
+                  /></span>
+                  <p>251,232</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="related-blog__buttons">
+            <button class="next-button" type="button"></button>
+            <button class="previous-button" type="button"></button>
+          </div>
+        </div>
+      </section>
+      <section class="marketing-articles">
+        <div class="marketing-articles__wrapper">
+          <div class="marketing-articles__text">
+            <p class="marketing-articles__subtitle">Marketing Articles</p>
+            <a class="seeAll__link" href="#">See all</a>
+          </div>
+          <div class="marketing-articles__cards">
+            <article class="marketing-articles__card">
+              <img
+                class="marketing-articles__picture"
+                src="/TOTC-PLATFORM/assets/marketing-article__picture%201-BZBscNNW.png"
+                alt="Девочка работает на планшете"
+              />
+              <div class="design__wrapper">
+                <div class="design-sign">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIlJREFUeAHtk7ENgCAQRe+MA7iBdIzlCo7gCK7gJm4BNMgG2lPgXWGHARMoTPgJ3BUvr/qHxpgJAFZ6A0QSQnCIuEgpt1wWtNaHtXaElyilBMlO3rNZ+gIk8jC5bAcV0qQVpNSrK1UTGo73XLanws7e+52qIGIgi5jh/QtbPNjOtHiatIL0N2d6A7slxKsWWrtVAAAAAElFTkSuQmCC"
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="design__text">Design</p>
+                </div>
+                <div class="publication-date__wrapper">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAohJREFUeAGtVduN2kAUHZs3P6GDBT54SEgxFaxTQZwKwlbApoI1FYRUEKeCkAriVABISLwk5HRAJISQEJBzyMzuxIu9Xu2eD/vOzJ1z5z7mjiFisFwurw+HgwPRNgyjjH+J86fTaYTxCKJfr9e/xXEYMcQuSGzxBGAsgJ4bZeiRgcVi8Rmbbu8VDMPH2Ic4Ph6Pa86lUqm3mLMhOpohP5vNdqrV6u9IA/P5/Ct+HUUML3rNZtMXEZhOp2XTNO/UHnoDI7ZuxNDIqejKIV3u6WQMGzywIQbhcMDrLsj70sio0Wi01ZqpNseRE8yJ1HHDa7Va7YvmuSUP+2AAmz05Di6RJwG9AnlfDm+Hw+G54kyeXpagyGQytngBsL8HLhZCqVgsds8GENcOBSY1XAHPRaVSWatcCFlhDJFFQZbii4Gq8qVoMUymCg+zL14B6XR6rGSErGyCWF3/P0lJVAIvgWFSMi5kyVQDePJGxEAmjygXCoXharW6EglAA4HaGKcId12ly7Du9/vRbDbrhvVw6Swl73a7EQ34cuzEGUCFsRe9g+jJqRLrfjKZWCHVa/kP2u32Gkk3B/JUdlxsCfQlXsQb6Kpm6LVarf+KA4dQaz4/JrL+S8UXsb0TCcDWAKLKdrv9pM+jRXzULq17Pjg/erMCOk89IpfAzgryn9KAR0/PHqgTaRetj+S9F89AiDxQp783QORyuQ/iX5UweQO9I8aB3iOPQ5Iz1CB3Lr4H6iRQ/i4e2gefQx9z3mazGbMqWAhoZFcsCuTB0Z7VQJKPdc6Lb3Lo8UmCARJ+wwOEF4yoHdIbVoUDT6xHGxEOeOBh7UfcsxppQAfDks/nz0bQX9Z4oNa8E0n2/gXO+zRHwbdi6AAAAABJRU5ErkJggg=="
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="marketing-articles__date">3 Month</p>
+                </div>
+              </div>
+              <h2 class="marketing-articles__title">
+                <a href="#" class="">AWS Certified solutions Architect</a>
+              </h2>
+              <p class="marketing-articles__description">
+                Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
+                eiusmod tempor
+              </p>
+              <div class="marketing-articles__price-wrapper">
+                <div class="propile">
+                  <img
+                    src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                    alt="Фотография профиля"
+                  />
+                  <p class="profile__name">Lina</p>
+                </div>
+                <div class="price">
+                  <p class="old-price">$100</p>
+                  <p class="new-price">$80</p>
+                </div>
+              </div>
+            </article>
+            <article class="marketing-articles__card">
+              <img
+                class="marketing-articles__picture"
+                src="/TOTC-PLATFORM/assets/marketing-article__picture%202-DQHe03OV.png"
+                alt="Встреча в Zoom"
+              />
+              <div class="design__wrapper">
+                <div class="design-sign">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIlJREFUeAHtk7ENgCAQRe+MA7iBdIzlCo7gCK7gJm4BNMgG2lPgXWGHARMoTPgJ3BUvr/qHxpgJAFZ6A0QSQnCIuEgpt1wWtNaHtXaElyilBMlO3rNZ+gIk8jC5bAcV0qQVpNSrK1UTGo73XLanws7e+52qIGIgi5jh/QtbPNjOtHiatIL0N2d6A7slxKsWWrtVAAAAAElFTkSuQmCC"
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="design__text">Design</p>
+                </div>
+                <div class="publication-date__wrapper">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAohJREFUeAGtVduN2kAUHZs3P6GDBT54SEgxFaxTQZwKwlbApoI1FYRUEKeCkAriVABISLwk5HRAJISQEJBzyMzuxIu9Xu2eD/vOzJ1z5z7mjiFisFwurw+HgwPRNgyjjH+J86fTaYTxCKJfr9e/xXEYMcQuSGzxBGAsgJ4bZeiRgcVi8Rmbbu8VDMPH2Ic4Ph6Pa86lUqm3mLMhOpohP5vNdqrV6u9IA/P5/Ct+HUUML3rNZtMXEZhOp2XTNO/UHnoDI7ZuxNDIqejKIV3u6WQMGzywIQbhcMDrLsj70sio0Wi01ZqpNseRE8yJ1HHDa7Va7YvmuSUP+2AAmz05Di6RJwG9AnlfDm+Hw+G54kyeXpagyGQytngBsL8HLhZCqVgsds8GENcOBSY1XAHPRaVSWatcCFlhDJFFQZbii4Gq8qVoMUymCg+zL14B6XR6rGSErGyCWF3/P0lJVAIvgWFSMi5kyVQDePJGxEAmjygXCoXharW6EglAA4HaGKcId12ly7Du9/vRbDbrhvVw6Swl73a7EQ34cuzEGUCFsRe9g+jJqRLrfjKZWCHVa/kP2u32Gkk3B/JUdlxsCfQlXsQb6Kpm6LVarf+KA4dQaz4/JrL+S8UXsb0TCcDWAKLKdrv9pM+jRXzULq17Pjg/erMCOk89IpfAzgryn9KAR0/PHqgTaRetj+S9F89AiDxQp783QORyuQ/iX5UweQO9I8aB3iOPQ5Iz1CB3Lr4H6iRQ/i4e2gefQx9z3mazGbMqWAhoZFcsCuTB0Z7VQJKPdc6Lb3Lo8UmCARJ+wwOEF4yoHdIbVoUDT6xHGxEOeOBh7UfcsxppQAfDks/nz0bQX9Z4oNa8E0n2/gXO+zRHwbdi6AAAAABJRU5ErkJggg=="
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="marketing-articles__date">3 Month</p>
+                </div>
+              </div>
+              <h2 class="marketing-articles__title">
+                <a href="#" class="">AWS Certified solutions Architect</a>
+              </h2>
+              <p class="marketing-articles__description">
+                Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
+                eiusmod tempor
+              </p>
+              <div class="marketing-articles__price-wrapper">
+                <div class="propile">
+                  <img
+                    src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                    alt="Фотография профиля"
+                  />
+                  <p class="profile__name">Lina</p>
+                </div>
+                <div class="price">
+                  <p class="old-price">$100</p>
+                  <p class="new-price">$80</p>
+                </div>
+              </div>
+            </article>
+            <article class="marketing-articles__card">
+              <img
+                class="marketing-articles__picture"
+                src="/TOTC-PLATFORM/assets/marketing-article__picture%203-DLiZ4gE6.png"
+                alt="Встреча в Zoom"
+              />
+              <div class="design__wrapper">
+                <div class="design-sign">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIlJREFUeAHtk7ENgCAQRe+MA7iBdIzlCo7gCK7gJm4BNMgG2lPgXWGHARMoTPgJ3BUvr/qHxpgJAFZ6A0QSQnCIuEgpt1wWtNaHtXaElyilBMlO3rNZ+gIk8jC5bAcV0qQVpNSrK1UTGo73XLanws7e+52qIGIgi5jh/QtbPNjOtHiatIL0N2d6A7slxKsWWrtVAAAAAElFTkSuQmCC"
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="design__text">Design</p>
+                </div>
+                <div class="publication-date__wrapper">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAohJREFUeAGtVduN2kAUHZs3P6GDBT54SEgxFaxTQZwKwlbApoI1FYRUEKeCkAriVABISLwk5HRAJISQEJBzyMzuxIu9Xu2eD/vOzJ1z5z7mjiFisFwurw+HgwPRNgyjjH+J86fTaYTxCKJfr9e/xXEYMcQuSGzxBGAsgJ4bZeiRgcVi8Rmbbu8VDMPH2Ic4Ph6Pa86lUqm3mLMhOpohP5vNdqrV6u9IA/P5/Ct+HUUML3rNZtMXEZhOp2XTNO/UHnoDI7ZuxNDIqejKIV3u6WQMGzywIQbhcMDrLsj70sio0Wi01ZqpNseRE8yJ1HHDa7Va7YvmuSUP+2AAmz05Di6RJwG9AnlfDm+Hw+G54kyeXpagyGQytngBsL8HLhZCqVgsds8GENcOBSY1XAHPRaVSWatcCFlhDJFFQZbii4Gq8qVoMUymCg+zL14B6XR6rGSErGyCWF3/P0lJVAIvgWFSMi5kyVQDePJGxEAmjygXCoXharW6EglAA4HaGKcId12ly7Du9/vRbDbrhvVw6Swl73a7EQ34cuzEGUCFsRe9g+jJqRLrfjKZWCHVa/kP2u32Gkk3B/JUdlxsCfQlXsQb6Kpm6LVarf+KA4dQaz4/JrL+S8UXsb0TCcDWAKLKdrv9pM+jRXzULq17Pjg/erMCOk89IpfAzgryn9KAR0/PHqgTaRetj+S9F89AiDxQp783QORyuQ/iX5UweQO9I8aB3iOPQ5Iz1CB3Lr4H6iRQ/i4e2gefQx9z3mazGbMqWAhoZFcsCuTB0Z7VQJKPdc6Lb3Lo8UmCARJ+wwOEF4yoHdIbVoUDT6xHGxEOeOBh7UfcsxppQAfDks/nz0bQX9Z4oNa8E0n2/gXO+zRHwbdi6AAAAABJRU5ErkJggg=="
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="marketing-articles__date">3 Month</p>
+                </div>
+              </div>
+              <h2 class="marketing-articles__title">
+                <a href="#" class="">AWS Certified solutions Architect</a>
+              </h2>
+              <p class="marketing-articles__description">
+                Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
+                eiusmod tempor
+              </p>
+              <div class="marketing-articles__price-wrapper">
+                <div class="propile">
+                  <img
+                    src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                    alt="Фотография профиля"
+                  />
+                  <p class="profile__name">Lina</p>
+                </div>
+                <div class="price">
+                  <p class="old-price">$100</p>
+                  <p class="new-price">$80</p>
+                </div>
+              </div>
+            </article>
+            <article class="marketing-articles__card">
+              <img
+                class="marketing-articles__picture"
+                src="/TOTC-PLATFORM/assets/marketing-article__picture%204-5hIHuqqb.png"
+                alt="Изображение ноутбука и кота"
+              />
+              <div class="design__wrapper">
+                <div class="design-sign">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAIlJREFUeAHtk7ENgCAQRe+MA7iBdIzlCo7gCK7gJm4BNMgG2lPgXWGHARMoTPgJ3BUvr/qHxpgJAFZ6A0QSQnCIuEgpt1wWtNaHtXaElyilBMlO3rNZ+gIk8jC5bAcV0qQVpNSrK1UTGo73XLanws7e+52qIGIgi5jh/QtbPNjOtHiatIL0N2d6A7slxKsWWrtVAAAAAElFTkSuQmCC"
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="design__text">Design</p>
+                </div>
+                <div class="publication-date__wrapper">
+                  <span
+                    ><img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAohJREFUeAGtVduN2kAUHZs3P6GDBT54SEgxFaxTQZwKwlbApoI1FYRUEKeCkAriVABISLwk5HRAJISQEJBzyMzuxIu9Xu2eD/vOzJ1z5z7mjiFisFwurw+HgwPRNgyjjH+J86fTaYTxCKJfr9e/xXEYMcQuSGzxBGAsgJ4bZeiRgcVi8Rmbbu8VDMPH2Ic4Ph6Pa86lUqm3mLMhOpohP5vNdqrV6u9IA/P5/Ct+HUUML3rNZtMXEZhOp2XTNO/UHnoDI7ZuxNDIqejKIV3u6WQMGzywIQbhcMDrLsj70sio0Wi01ZqpNseRE8yJ1HHDa7Va7YvmuSUP+2AAmz05Di6RJwG9AnlfDm+Hw+G54kyeXpagyGQytngBsL8HLhZCqVgsds8GENcOBSY1XAHPRaVSWatcCFlhDJFFQZbii4Gq8qVoMUymCg+zL14B6XR6rGSErGyCWF3/P0lJVAIvgWFSMi5kyVQDePJGxEAmjygXCoXharW6EglAA4HaGKcId12ly7Du9/vRbDbrhvVw6Swl73a7EQ34cuzEGUCFsRe9g+jJqRLrfjKZWCHVa/kP2u32Gkk3B/JUdlxsCfQlXsQb6Kpm6LVarf+KA4dQaz4/JrL+S8UXsb0TCcDWAKLKdrv9pM+jRXzULq17Pjg/erMCOk89IpfAzgryn9KAR0/PHqgTaRetj+S9F89AiDxQp783QORyuQ/iX5UweQO9I8aB3iOPQ5Iz1CB3Lr4H6iRQ/i4e2gefQx9z3mazGbMqWAhoZFcsCuTB0Z7VQJKPdc6Lb3Lo8UmCARJ+wwOEF4yoHdIbVoUDT6xHGxEOeOBh7UfcsxppQAfDks/nz0bQX9Z4oNa8E0n2/gXO+zRHwbdi6AAAAABJRU5ErkJggg=="
+                      alt="Дизайнерский элемент"
+                  /></span>
+                  <p class="marketing-articles__date">3 Month</p>
+                </div>
+              </div>
+              <h2 class="marketing-articles__title">
+                <a href="#" class="">AWS Certified solutions Architect</a>
+              </h2>
+              <p class="marketing-articles__description">
+                Lorem ipsum dolor sit amet, consectetur adipising elit, sed do
+                eiusmod tempor
+              </p>
+              <div class="marketing-articles__price-wrapper">
+                <div class="propile">
+                  <img
+                    src="/TOTC-PLATFORM/assets/profile-picture-C9WZXykm.png"
+                    alt="Фотография профиля"
+                  />
+                  <p class="profile__name">Lina</p>
+                </div>
+                <div class="price">
+                  <p class="old-price">$100</p>
+                  <p class="new-price">$80</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__textWrapper">
+          <img src="data:image/png;base64,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" alt="Лого" />
+          <div class="footer__text">
+            <p>Virtual Class <br />for Zoom</p>
+          </div>
+        </div>
+        <p class="footer__subscribe">Subscribe to get our Newsletter</p>
+        <div class="footer__inputField">
+          <input type="email" placeholder="Your Email" class="footer__input" />
+          <button class="footer__submitButton" type="submit">Subscribe</button>
+        </div>
+        <div class="footer__terms">
+          <p class="terms__text terms__text--careers">Careers</p>
+          <p class="terms__text terms__text--policy">Privacy Policy</p>
+          <p class="terms__text terms__text--condition">Terms & Conditions</p>
+        </div>
+        <p class="terms__text terms__text--copyright">
+          © 2021 Class Technologies Inc.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
