@@ -54,21 +54,24 @@
       color: #000000;
     }
   }
-  @media (max-width: 1024px) {
-    .blog-list__container {
-      padding: 50px;
-    }
-    .blog-list__cards {
-      flex-wrap: wrap;
-      gap: 50px;
-      .blog-list__card {
-        max-width: 356px;
-      }
+}
+@media (max-width: 1024px) {
+  .blog-list {
+    padding: 50px;
+  }
+  .blog-list__cards {
+    flex-wrap: wrap;
+    gap: 50px;
+    .blog-list__card {
+      max-width: 356px;
     }
   }
-  @media (max-width: 768px) {
-    .blog-list__card {
-      min-width: 300px;
-    }
+}
+@media (max-width: 768px) {
+  .blog-list {
+    padding: 30px;
+  }
+  .blog-list__card {
+    min-width: 300px;
   }
 }
