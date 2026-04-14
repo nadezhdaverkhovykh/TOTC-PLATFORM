@@ -20,11 +20,11 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
-          <a class="logo" href="#">
-            <img src="./src/assets/images/header/logo.png" alt="Лого"
-          /></a>
-          <div class="header__wrapper">
+        <a class="logo" href="#">
+          <img src="./src/assets/images/header/header-logo.svg" alt="Лого"
+        /></a>
+        <div class="header__wrapper">
+          <nav class="nav">
             <ul class="header__menu">
               <li><a href="#">Home</a></li>
               <li><a href="#">Courses</a></li>
@@ -32,57 +32,86 @@
               <li><a href="#">Blog</a></li>
               <li><a href="#">About Us</a></li>
             </ul>
-            <div class="user">
-              <img
-                class="user__picture"
-                src="./src/assets/images/header/profile-picture.png"
-                alt="Фотография профиля"
-              />
-              <p class="user__name">Lina</p>
-              <button type="button" class="user__button">
-                <span>
-                  <img
-                    src="./src/assets/images/header/header-button.png"
-                    alt="Открыть дропдаун"
-                /></span>
-              </button>
-            </div>
-          </div>
-        </nav>
-        <!-- //mobile version -->
-        <div class="header__mobile">
-          <div class="header__mobileWrapper">
-            <button class="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <div class="user">
-              <img
-                class="user__picture"
-                src="./src/assets/images/header/profile-picture.png"
-                alt="Фотография профиля"
-              />
-              <p class="user__name">Lina</p>
-              <button type="button" class="user__button">
-                <span>
-                  <img
-                    src="./src/assets/images/header/header-button.png"
-                    alt="Открыть дропдаун"
-                /></span>
-              </button>
-            </div>
-          </div>
-          <nav class="burgerMenu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Courses</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">About Us</a></li>
-            </ul>
           </nav>
+          <div class="user">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./src/assets/images/header/profile-picture-63.webp  1x,
+                  ./src/assets/images/header/profile-picture-126.webp 2x
+                "
+              />
+              <img
+                class="user__picture"
+                src="./src/assets/images/header/profile-picture-63.jpg"
+                alt="Фотография профиля "
+                width="63"
+                height="63"
+                srcset="
+                  ./src/assets/images/header/profile-picture-63.jpg  1x,
+                  ./src/assets/images/header/profile-picture-126.jpg 2x
+                "
+              />
+            </picture>
+            <p class="user__name">Lina</p>
+            <button type="button" class="user__button">
+              <span>
+                <img
+                  src="./src/assets/images/header/header-button.svg"
+                  alt="Открыть дропдаун"
+              /></span>
+            </button>
+          </div>
         </div>
+      </div>
+      <div class="header__mobile">
+        <div class="header__mobileWrapper">
+          <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="user">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./src/assets/images/header/profile-picture-63.webp  1x,
+                  ./src/assets/images/header/profile-picture-126.webp 2x
+                "
+              />
+              <img
+                class="user__picture"
+                src="./src/assets/images/header/profile-picture-63.jpg"
+                alt="Фотография профиля "
+                width="63"
+                height="63"
+                srcset="
+                  ./src/assets/images/header/profile-picture-63.jpg  1x,
+                  ./src/assets/images/header/profile-picture-126.jpg 2x
+                "
+              />
+            </picture>
+            <p class="user__name">Lina</p>
+            <button type="button" class="user__button">
+              <span>
+                <img
+                  src="./src/assets/images/header/header-button.svg"
+                  alt="Открыть дропдаун"
+              /></span>
+            </button>
+          </div>
+        </div>
+        <nav class="burgerMenu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -108,13 +137,26 @@
                 Start learning now
               </button>
             </div>
-            <div>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./src/assets/images/hero/hero-picture-779.webp  1x,
+                  ./src/assets/images/hero/hero-picture-1558.webp 2x
+                "
+              />
               <img
                 class="hero__image"
-                src="./src/assets/images/hero/hero-picture.png"
+                src="./src/assets/images/hero/hero-picture-779.jpg"
                 alt="Демонстрация встречи zoom"
+                width="779"
+                height="526"
+                srcset="
+                  ./src/assets/images/hero/hero-picture-779.jpg      1x,
+                  ./src/assets/images/hero/hero-picture-1558.jpg.jpg 2x
+                "
               />
-            </div>
+            </picture>
           </div>
         </div>
       </section>
@@ -145,22 +187,52 @@
           </div>
           <div class="related-blog__articles">
             <article class="related-blog__article">
-              <img
-                class="related-blog__picture"
-                src="./src/assets/images/related-blog/related-blog__picture1.png"
-                alt="Девушка"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/related-blog/related-blog__picture1-720.webp  1x,
+                    ./src/assets/images/related-blog/related-blog__picture1-1440.webp 2x
+                  "
+                />
+                <img
+                  class="related-blog__picture"
+                  src="./src/assets/images/related-blog/related-blog__picture1-720.jpg"
+                  alt="Девушка"
+                  width="720"
+                  height="382"
+                  srcset="
+                    ./src/assets/images/related-blog/related-blog__picture1-720.jpg  1x,
+                    ./src/assets/images/related-blog/related-blog__picture1-1440.jpg 2x
+                  "
+                />
+              </picture>
               <h2 class="related-blog__title">
                 <a href="#"
-                  >Class adds $30 million to its balance sheet for a <br />
+                  >Class adds $30 million to its balance sheet for a
                   Zoom-friendly edtech solution
                 </a>
               </h2>
               <div class="related-blog__profile">
-                <img
-                  src="./src/assets/images/related-blog/profile-picture.png"
-                  alt="Фотография профиля"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./src/assets/images/header/profile-picture-63.webp  1x,
+                      ./src/assets/images/header/profile-picture-126.webp 2x
+                    "
+                  />
+                  <img
+                    src="./src/assets/images/header/profile-picture-63.jpg"
+                    alt="Фотография профиля"
+                    width="63"
+                    height="63"
+                    srcset="
+                      ./src/assets/images/header/profile-picture-63.jpg  1x,
+                      ./src/assets/images/header/profile-picture-126.jpg 2x
+                    "
+                  />
+                </picture>
                 <p>Lina</p>
               </div>
               <p class="related-blog__description">
@@ -172,30 +244,60 @@
                 <div class="views__amount">
                   <span
                     ><img
-                      src="./src/assets/images/related-blog/related-blog__views.png"
+                      src="./src/assets/images/related-blog/related-blog__views.svg"
                       alt="Количество просмотров"
                   /></span>
-                  <p>251,232</p>
+                  <p class="views">251,232</p>
                 </div>
               </div>
             </article>
             <article class="related-blog__article">
-              <img
-                class="related-blog__picture"
-                src="./src/assets/images/related-blog/related-blog__picture2.png"
-                alt="Открытый ноутбук"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/related-blog/related-blog__picture2-720.webp  1x,
+                    ./src/assets/images/related-blog/related-blog__picture2-1440.webp 2x
+                  "
+                />
+                <img
+                  class="related-blog__picture"
+                  src="./src/assets/images/related-blog/related-blog__picture2-720.jpg"
+                  alt="Открытый ноутбук"
+                  width="720"
+                  height="382"
+                  srcset="
+                    ./src/assets/images/related-blog/related-blog__picture2-720.jpg  1x,
+                    ./src/assets/images/related-blog/related-blog__picture2-1440.jpg 2x
+                  "
+                />
+              </picture>
               <h2 class="related-blog__title">
                 <a href="#">
-                  Class adds $30 million to its balance sheet for a <br />
+                  Class adds $30 million to its balance sheet for a
                   Zoom-friendly edtech solution</a
                 >
               </h2>
               <div class="related-blog__profile">
-                <img
-                  src="./src/assets/images/related-blog/profile-picture.png"
-                  alt="Фотография профиля"
-                />
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./src/assets/images/header/profile-picture-63.webp  1x,
+                      ./src/assets/images/header/profile-picture-126.webp 2x
+                    "
+                  />
+                  <img
+                    src="./src/assets/images/header/profile-picture-63.jpg"
+                    alt="Фотография профиля "
+                    width="63"
+                    height="63"
+                    srcset="
+                      ./src/assets/images/header/profile-picture-63.jpg  1x,
+                      ./src/assets/images/header/profile-picture-126.jpg 2x
+                    "
+                  />
+                </picture>
                 <p>Lina</p>
               </div>
               <p class="related-blog__description">
@@ -207,10 +309,10 @@
                 <div class="views__amount">
                   <span
                     ><img
-                      src="./src/assets/images/related-blog/related-blog__views.png"
+                      src="./src/assets/images/related-blog/related-blog__views.svg"
                       alt="Количество просмотров"
                   /></span>
-                  <p>251,232</p>
+                  <p class="views">251,232</p>
                 </div>
               </div>
             </article>
@@ -222,23 +324,38 @@
         </div>
       </section>
       <section class="marketing-articles">
-        <div class="marketing-articles__wrapper">
+        <div class="marketing-articles__container">
           <div class="marketing-articles__text">
             <p class="marketing-articles__subtitle">Marketing Articles</p>
             <a class="seeAll__link" href="#">See all</a>
           </div>
           <div class="marketing-articles__cards">
             <article class="marketing-articles__card">
-              <img
-                class="marketing-articles__picture"
-                src="./src/assets/images/marketing-articles/marketing-article__picture 1.png"
-                alt="Девочка работает на планшете"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture1-335.webp 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture1-670.webp 2x
+                  "
+                />
+                <img
+                  class="marketing-articles__picture"
+                  src="./src/assets/images/marketing-articles/marketing-article__picture1-335.jpg"
+                  alt="Девочка работает на планшете"
+                  width="335"
+                  height="239"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture1-335.jpg 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture1-670.jpg 2x
+                  "
+                />
+              </picture>
               <div class="design__wrapper">
                 <div class="design-sign">
                   <span
                     ><img
-                      src="./src/assets/images/marketing-articles/marketing-articles__design element.png"
+                      src="./src/assets/images/marketing-articles/marketing-articles__design element.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="design__text">Design</p>
@@ -246,7 +363,7 @@
                 <div class="publication-date__wrapper">
                   <span
                     ><img
-                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.png"
+                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="marketing-articles__date">3 Month</p>
@@ -260,11 +377,26 @@
                 eiusmod tempor
               </p>
               <div class="marketing-articles__price-wrapper">
-                <div class="propile">
-                  <img
-                    src="./src/assets/images/marketing-articles/profile-picture.png"
-                    alt="Фотография профиля"
-                  />
+                <div class="profile">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.webp  1x,
+                        ./src/assets/images/header/profile-picture-126.webp 2x
+                      "
+                    />
+                    <img
+                      src="./src/assets/images/header/profile-picture-63.jpg"
+                      alt="Фотография профиля "
+                      width="63"
+                      height="63"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.jpg  1x,
+                        ./src/assets/images/header/profile-picture-126.jpg 2x
+                      "
+                    />
+                  </picture>
                   <p class="profile__name">Lina</p>
                 </div>
                 <div class="price">
@@ -274,16 +406,31 @@
               </div>
             </article>
             <article class="marketing-articles__card">
-              <img
-                class="marketing-articles__picture"
-                src="./src/assets/images/marketing-articles/marketing-article__picture 2.png"
-                alt="Встреча в Zoom"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture2-338.webp 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture2-676.webp 2x
+                  "
+                />
+                <img
+                  class="marketing-articles__picture"
+                  src="./src/assets/images/marketing-articles/marketing-article__picture2-338.jpg"
+                  alt="Встреча в Zoom"
+                  width="338"
+                  height="239"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture2-338.jpg 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture2-676.jpg 2x
+                  "
+                />
+              </picture>
               <div class="design__wrapper">
                 <div class="design-sign">
                   <span
                     ><img
-                      src="./src/assets/images/marketing-articles/marketing-articles__design element.png"
+                      src="./src/assets/images/marketing-articles/marketing-articles__design element.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="design__text">Design</p>
@@ -291,7 +438,7 @@
                 <div class="publication-date__wrapper">
                   <span
                     ><img
-                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.png"
+                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="marketing-articles__date">3 Month</p>
@@ -305,11 +452,26 @@
                 eiusmod tempor
               </p>
               <div class="marketing-articles__price-wrapper">
-                <div class="propile">
-                  <img
-                    src="./src/assets/images/marketing-articles/profile-picture.png"
-                    alt="Фотография профиля"
-                  />
+                <div class="profile">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.webp  1x,
+                        ./src/assets/images/header/profile-picture-126.webp 2x
+                      "
+                    />
+                    <img
+                      src="./src/assets/images/header/profile-picture-63.jpg"
+                      alt="Фотография профиля "
+                      width="63"
+                      height="63"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.jpg  1x,
+                        ./src/assets/images/header/profile-picture-126.jpg 2x
+                      "
+                    />
+                  </picture>
                   <p class="profile__name">Lina</p>
                 </div>
                 <div class="price">
@@ -319,16 +481,31 @@
               </div>
             </article>
             <article class="marketing-articles__card">
-              <img
-                class="marketing-articles__picture"
-                src="./src/assets/images/marketing-articles/marketing-article__picture 3.png"
-                alt="Встреча в Zoom"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture3-334.webp 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture3-668.webp 2x
+                  "
+                />
+                <img
+                  class="marketing-articles__picture"
+                  src="./src/assets/images/marketing-articles/marketing-article__picture3-334.jpg"
+                  alt="Встреча в Zoom"
+                  width="334"
+                  height="238"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture3-334.jpg 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture3-668.jpg 2x
+                  "
+                />
+              </picture>
               <div class="design__wrapper">
                 <div class="design-sign">
                   <span
                     ><img
-                      src="./src/assets/images/marketing-articles/marketing-articles__design element.png"
+                      src="./src/assets/images/marketing-articles/marketing-articles__design element.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="design__text">Design</p>
@@ -336,7 +513,7 @@
                 <div class="publication-date__wrapper">
                   <span
                     ><img
-                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.png"
+                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="marketing-articles__date">3 Month</p>
@@ -350,11 +527,26 @@
                 eiusmod tempor
               </p>
               <div class="marketing-articles__price-wrapper">
-                <div class="propile">
-                  <img
-                    src="./src/assets/images/marketing-articles/profile-picture.png"
-                    alt="Фотография профиля"
-                  />
+                <div class="profile">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.webp  1x,
+                        ./src/assets/images/header/profile-picture-126.webp 2x
+                      "
+                    />
+                    <img
+                      src="./src/assets/images/header/profile-picture-63.jpg"
+                      alt="Фотография профиля "
+                      width="63"
+                      height="63"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.jpg  1x,
+                        ./src/assets/images/header/profile-picture-126.jpg 2x
+                      "
+                    />
+                  </picture>
                   <p class="profile__name">Lina</p>
                 </div>
                 <div class="price">
@@ -364,16 +556,31 @@
               </div>
             </article>
             <article class="marketing-articles__card">
-              <img
-                class="marketing-articles__picture"
-                src="./src/assets/images/marketing-articles/marketing-article__picture 4.png"
-                alt="Изображение ноутбука и кота"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture4-335.webp 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture4-670.webp 2x
+                  "
+                />
+                <img
+                  class="marketing-articles__picture"
+                  src="./src/assets/images/marketing-articles/marketing-article__picture4-335.jpg"
+                  alt="Изображение ноутбука и кота"
+                  width="335"
+                  height="239"
+                  srcset="
+                    ./src/assets/images/marketing-articles/marketing-article__picture4-335.jpg 1x,
+                    ./src/assets/images/marketing-articles/marketing-article__picture4-670.jpg 2x
+                  "
+                />
+              </picture>
               <div class="design__wrapper">
                 <div class="design-sign">
                   <span
                     ><img
-                      src="./src/assets/images/marketing-articles/marketing-articles__design element.png"
+                      src="./src/assets/images/marketing-articles/marketing-articles__design element.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="design__text">Design</p>
@@ -381,7 +588,7 @@
                 <div class="publication-date__wrapper">
                   <span
                     ><img
-                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.png"
+                      src="/src/assets/images/marketing-articles/marketing-articles__design element--clock.svg"
                       alt="Дизайнерский элемент"
                   /></span>
                   <p class="marketing-articles__date">3 Month</p>
@@ -395,11 +602,7 @@
                 eiusmod tempor
               </p>
               <div class="marketing-articles__price-wrapper">
-                <div class="propile">
-                  <img
-                    src="./src/assets/images/marketing-articles/profile-picture.png"
-                    alt="Фотография профиля"
-                  />
+                <div class="profile">
                   <p class="profile__name">Lina</p>
                 </div>
                 <div class="price">
@@ -413,26 +616,42 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__textWrapper">
-          <img src="./src/assets/images/footer/footer__logo.png" alt="Лого" />
-          <div class="footer__text">
-            <p>Virtual Class <br />for Zoom</p>
+      <div class="footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__textWrapper">
+            <img src="./src/assets/images/footer/footer-logo.svg" alt="Лого" />
+            <div class="footer__text">
+              <p>Virtual Class for Zoom</p>
+            </div>
           </div>
+          <p class="footer__subscribe">Subscribe to get our Newsletter</p>
+          <div class="footer__inputField">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="footer__input"
+            />
+            <button class="footer__submitButton" type="submit">
+              Subscribe
+            </button>
+          </div>
+          <nav>
+            <ul class="footer__terms">
+              <li class="terms__text terms__text--careers">
+                <a href="#">Careers</a>
+              </li>
+              <li class="terms__text terms__text--policy">
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li class="terms__text terms__text--condition">
+                <a href="#">Terms & Conditions</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="terms__text terms__text--copyright">
+            © 2021 Class Technologies Inc.
+          </p>
         </div>
-        <p class="footer__subscribe">Subscribe to get our Newsletter</p>
-        <div class="footer__inputField">
-          <input type="email" placeholder="Your Email" class="footer__input" />
-          <button class="footer__submitButton" type="submit">Subscribe</button>
-        </div>
-        <div class="footer__terms">
-          <p class="terms__text terms__text--careers">Careers</p>
-          <p class="terms__text terms__text--policy">Privacy Policy</p>
-          <p class="terms__text terms__text--condition">Terms & Conditions</p>
-        </div>
-        <p class="terms__text terms__text--copyright">
-          © 2021 Class Technologies Inc.
-        </p>
       </div>
     </footer>
   </body>

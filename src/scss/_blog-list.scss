@@ -1,8 +1,9 @@
 .blog-list {
-  padding: 80px;
+  padding: 80px 0px;
   &__container {
     max-width: 1640px;
     margin: 0 auto;
+    padding: 0px 20px;
   }
   &__text {
     font-family: "Poppins", sans-serif;
@@ -12,31 +13,57 @@
   }
   &__cards {
     display: flex;
-    gap: 76px;
+    gap: 53px;
   }
   &__card {
-    min-width: 356px;
-    min-height: 327px;
+    max-width: 356px;
+    width: 100%;
+    aspect-ratio: 356 / 327;
     border-radius: 20px;
     position: relative;
+    background-position: center;
+    background-size: cover;
     &--ux {
-      background-image: url("../assets/images/blog-list/blog-list__card--ux.png");
+      background-image: url("../assets/images/blog-list/blog-list__card--ux-356.jpg");
+      background-image: image-set(
+        url("../assets/images/blog-list/blog-list__card--ux-356.webp") 1x,
+        url("../assets/images/blog-list/blog-list__card--ux-712.webp") 2x,
+        url("../assets/images/blog-list/blog-list__card--ux-356.jpg") 1x,
+        url("../assets/images/blog-list/blog-list__card--ux-712.jpg") 2x
+      );
     }
     &--react {
-      background-image: url("../assets/images/blog-list/blog-list__card--react.png");
+      background-image: url("../assets/images/blog-list/blog-list__card--react-356.jpg");
+      background-image: image-set(
+        url("../assets/images/blog-list/blog-list__card--react-356.webp") 1x,
+        url("../assets/images/blog-list/blog-list__card--react-712.webp") 2x,
+        url("../assets/images/blog-list/blog-list__card--react-356.jpg") 1x,
+        url("../assets/images/blog-list/blog-list__card--react-712.jpg") 2x
+      );
     }
     &--php {
-      background-image: url("../assets/images/blog-list/blog-list__card--php.png");
+      background-image: url("../assets/images/blog-list/blog-list__card--php-356.jpg");
+      background-image: image-set(
+        url("../assets/images/blog-list/blog-list__card--php-356.webp") 1x,
+        url("../assets/images/blog-list/blog-list__card--php-712.webp") 2x,
+        url("../assets/images/blog-list/blog-list__card--php-356.jpg") 1x,
+        url("../assets/images/blog-list/blog-list__card--php-712.jpg") 2x
+      );
     }
     &--js {
-      background-image: url("../assets/images/blog-list/blog-list__card--js.png");
+      background-image: url("../assets/images/blog-list/blog-list__card--js-356.jpg");
+      background-image: image-set(
+        url("../assets/images/blog-list/blog-list__card--js-356.webp") 1x,
+        url("../assets/images/blog-list/blog-list__card--js-712.webp") 2x,
+        url("../assets/images/blog-list/blog-list__card--js-356.jpg") 1x,
+        url("../assets/images/blog-list/blog-list__card--js-712.jpg") 2x
+      );
     }
   }
-
   &__span {
     max-width: 236px;
     border-radius: 12px;
-    padding: 16px 80px;
+    padding: 16px 40px;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     bottom: 34px;
@@ -55,9 +82,12 @@
     }
   }
 }
-@media (max-width: 1024px) {
+
+@media (max-width: 1200px) {
   .blog-list {
-    padding: 50px;
+    &__container {
+      padding: 50px 20px;
+    }
   }
   .blog-list__cards {
     flex-wrap: wrap;
@@ -69,9 +99,11 @@
 }
 @media (max-width: 768px) {
   .blog-list {
-    padding: 30px;
+    &__container {
+      padding: 30px 20px;
+    }
   }
   .blog-list__card {
-    min-width: 300px;
+    max-width: 300px;
   }
 }

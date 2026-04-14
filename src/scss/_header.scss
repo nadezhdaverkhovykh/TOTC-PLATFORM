@@ -1,15 +1,21 @@
 .header {
+  padding: 20px 0px;
   .container {
     max-width: 1640px;
     margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
   }
   .header__mobile {
     display: none;
   }
-  .nav {
+  .header__wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+  }
+  .nav {
     a {
       text-decoration: none;
       color: #5b5b5b;
@@ -21,24 +27,20 @@
       gap: 80px;
       list-style: none;
     }
-    .header__wrapper {
-      display: flex;
-    }
   }
   .user {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 18px;
     color: #5b5b5b;
-    font-size: 22px;
     &__button {
       border: none;
       background-color: transparent;
       cursor: pointer;
     }
     &__picture {
-      padding-left: 69px;
+      max-width: 100%;
+      height: auto;
+      margin-left: 69px;
     }
     &__name {
       font-family: "Poppins";
@@ -48,45 +50,51 @@
     }
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1147px) {
   .header {
-    .container {
-      max-width: 1640px;
-      .nav {
-        justify-content: space-around;
-      }
-      .header__menu {
-        gap: 50px;
-      }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    .container {
-      max-width: 1640px;
+    .nav {
       .header__menu {
         gap: 30px;
       }
-      a,
-      .user__name {
-        font-size: 16px;
-      }
-      .header__user {
-        gap: 10px;
-      }
-      .user__picture {
-        padding-left: 20px;
-      }
     }
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
   .header {
+    .nav {
+      .header__menu {
+        gap: 20px;
+      }
+    }
+
+    .user {
+      gap: 5px;
+    }
+    .user__picture {
+      margin-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 842px) {
+  .header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 721px) {
+  .header {
+    .header__wrapper,
+    .logo {
+      display: none;
+    }
     .header__mobile {
       display: block;
+      padding: 0px 20px;
     }
     &__mobileWrapper {
       display: flex;
@@ -96,9 +104,7 @@
         gap: 5px;
         align-items: center;
         &__picture {
-          padding-left: 0px;
-          width: 60px;
-          height: 40px;
+          margin-left: 0px;
         }
       }
     }
