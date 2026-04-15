@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOTC PLATFORM</title>
     <link rel="stylesheet" href="./src/scss/main.scss" />
-    <script defer src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -223,6 +222,7 @@
                     "
                   />
                   <img
+                    class="related-blog__profile-picture"
                     src="./src/assets/images/header/profile-picture-63.jpg"
                     alt="Фотография профиля"
                     width="63"
@@ -288,6 +288,7 @@
                     "
                   />
                   <img
+                    class="related-blog__profile-picture"
                     src="./src/assets/images/header/profile-picture-63.jpg"
                     alt="Фотография профиля "
                     width="63"
@@ -387,6 +388,7 @@
                       "
                     />
                     <img
+                      class="marketing-articles__profile-picture"
                       src="./src/assets/images/header/profile-picture-63.jpg"
                       alt="Фотография профиля "
                       width="63"
@@ -462,6 +464,7 @@
                       "
                     />
                     <img
+                      class="marketing-articles__profile-picture"
                       src="./src/assets/images/header/profile-picture-63.jpg"
                       alt="Фотография профиля "
                       width="63"
@@ -537,6 +540,7 @@
                       "
                     />
                     <img
+                      class="marketing-articles__profile-picture"
                       src="./src/assets/images/header/profile-picture-63.jpg"
                       alt="Фотография профиля "
                       width="63"
@@ -603,6 +607,26 @@
               </p>
               <div class="marketing-articles__price-wrapper">
                 <div class="profile">
+                  <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.webp  1x,
+                        ./src/assets/images/header/profile-picture-126.webp 2x
+                      "
+                    />
+                    <img
+                      class="marketing-articles__profile-picture"
+                      src="./src/assets/images/header/profile-picture-63.jpg"
+                      alt="Фотография профиля "
+                      width="63"
+                      height="63"
+                      srcset="
+                        ./src/assets/images/header/profile-picture-63.jpg  1x,
+                        ./src/assets/images/header/profile-picture-126.jpg 2x
+                      "
+                    />
+                  </picture>
                   <p class="profile__name">Lina</p>
                 </div>
                 <div class="price">

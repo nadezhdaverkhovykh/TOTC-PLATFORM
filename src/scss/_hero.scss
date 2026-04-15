@@ -14,6 +14,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    gap: 24px;
   }
   &__subtitle {
     font-family: "Poppins", sans-serif;
@@ -32,9 +33,9 @@
   &__text {
     color: #696984;
     font-size: 24px;
-    letter-spacing: 2%;
     line-height: 1.8;
     max-width: 688px;
+    font-family: "Poppins", sans-serif;
   }
   &__button {
     max-width: 236px;
@@ -60,7 +61,7 @@
   .hero {
     &__wrapper {
       flex-direction: column;
-      gap: 15px;
+      gap: 25px;
     }
   }
 }

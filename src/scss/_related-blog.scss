@@ -13,11 +13,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 41px;
   }
   &__link {
+    font-family: "Poppins", sans-serif;
     text-decoration: none;
     color: #49bbbd;
     font-size: 20px;
+    font-weight: 700;
   }
   &__articles {
     display: flex;
@@ -29,34 +32,45 @@
     background-color: #ffffff;
     padding: 60px 33px 60px 34px;
     border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 18.83px 47.08px rgba(47, 50, 125, 0.1);
   }
   &__picture {
     max-width: 100%;
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 12px;
   }
   &__title a {
+    max-width: 684px;
     font-size: 26px;
     color: #252641;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
     line-height: 1.8;
     text-decoration: none;
+    margin-bottom: 35px;
   }
   &__profile {
     display: flex;
+    align-items: center;
     gap: 10px;
     font-size: 18px;
     font-weight: 500;
     font-family: "Poppins", sans-serif;
+    margin-bottom: 25px;
+    margin-top: 14px;
+  }
+  &__profile-picture {
+    border-radius: 60px;
   }
   &__description {
     color: #696984;
     font-size: 20px;
-    max-width: 684px;
+    max-width: 685px;
     font-family: "Poppins", sans-serif;
     line-height: 1.8;
-    letter-spacing: 2%;
+    margin-bottom: 44px;
   }
   .article__views {
     display: flex;
@@ -68,14 +82,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    font-family: "Poppins", sans-serif;
+    gap: 22px;
     color: #696984;
   }
   .article__link {
     color: #696984;
     font-size: 20px;
-    letter-spacing: 2%;
-    text-decoration-thickness: 2px;
+    font-family: "Poppins", sans-serif;
+    text-decoration-thickness: 1px;
   }
   &__buttons {
     display: flex;
@@ -130,10 +145,11 @@
 
 @media (max-width: 480px) {
   .related-blog {
+    &__article {
+      padding-top: 30px;
+    }
     .article__link {
       font-size: 16px;
-      letter-spacing: 0%;
-      text-decoration-thickness: 2px;
     }
   }
   .related-blog__text {

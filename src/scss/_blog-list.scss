@@ -10,6 +10,7 @@
     color: #000000;
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 26px;
   }
   &__cards {
     display: flex;
@@ -21,8 +22,8 @@
     aspect-ratio: 356 / 327;
     border-radius: 20px;
     position: relative;
-    background-position: center;
     background-size: cover;
+
     &--ux {
       background-image: url("../assets/images/blog-list/blog-list__card--ux-356.jpg");
       background-image: image-set(
@@ -63,7 +64,7 @@
   &__span {
     max-width: 236px;
     border-radius: 12px;
-    padding: 16px 40px;
+    padding: 16px 80px;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     bottom: 34px;
